@@ -1,4 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <database>
-    <element extends="task" label="Chores" max_length="40" name="x_227512_cheroesze_chores" type="collection"/>
+    <element extends="task" label="Chores" max_length="40" name="x_227512_cheroesze_chores" type="collection">
+        <element choice="1" label="Category" mandatory="true" max_length="40" name="category" type="choice">
+            <choice>
+                <element label="Do the laundry" sequence="1" value="Do the laundry"/>
+                <element label="Empty dishwasher" sequence="2" value="Empty dishwasher"/>
+                <element label="Take out trash" sequence="3" value="Take out trash"/>
+                <element label="Vacuum Living Room" sequence="4" value="Vacuum Living Room"/>
+            </choice>
+        </element>
+    </element>
 </database>
